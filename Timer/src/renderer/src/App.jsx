@@ -1,13 +1,16 @@
-import Versions from './components/Versions'
-import electronLogo from './assets/electron.svg'
+import { useState } from "react"
+import Topbar from "./components/Topbar"
 
+import Timer from "./components/Timer";
 function App() {
-  const ipcHandle = () => window.electron.ipcRenderer.send('ping')
-
+  //const ipcHandle = () => window.electron.ipcRenderer.send('ping')
+  const [Overlay ,setOverlay] = useState(false);
   return (
     <>
-
-      <h1 className='text-right'>hello world</h1>
+      <Topbar />
+      <div className="bg-black bg-opacity-40 p-2 rounded-b-xl">
+      <Timer/>
+     </div>
     </>
   )
 }
