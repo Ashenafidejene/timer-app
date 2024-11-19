@@ -1,11 +1,13 @@
 import React, { useState,useEffect } from 'react'
 import InputFiled from './InputFiled'
+import stopA from '../assets/audio/1stop.mp3'
 export default function Timer({ isOverlay }) {
   const [isEditing, setIsEditing] = useState(true);
   const [minute, setMinute] = useState(1);
   const [hour, setHour] = useState(2);
   const [second, setSecond] = useState(3);
   const [active, setActive] = useState(false);
+  const audio = new Audio(stopA)
   useEffect(()=>{
     let intervalid
     if (active) {
@@ -14,6 +16,7 @@ export default function Timer({ isOverlay }) {
           setSecond((second)=> second - 1)
         }else{
           if (minute === 0 && hour === 0){
+            audio.play()
             clearInterval(intervalid)
             setActive(false)
           }
