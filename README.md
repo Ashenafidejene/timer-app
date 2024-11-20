@@ -30,9 +30,8 @@ This is a desktop application for tracking time, built using **Electron.js**, **
 1. Ensure **Node.js** and **npm** (or **yarn**) are installed.
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/time-tracker-desktop-app.git
-   cd time-tracker-desktop-app
-   ```
+   git clone git@github.com:Ashenafidejene/timer-app.git
+   cd Timer
 
 ### Install Dependencies
 Run the following command to install all necessary dependencies:
