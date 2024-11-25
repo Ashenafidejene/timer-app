@@ -79,4 +79,3 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-Replace `path-to-your-image.png` with the relative path of your app screenshot in your project folder. Let me know if you want additional customization!
